@@ -6,7 +6,19 @@
 ##################################################
 # ----- Load fzf ------------------------------- #
 ##################################################
-[ -f ~/.zsh/plugins/fzf/.fzf.zsh ] && source ~/zsh/plugins/.fzf/.fzf.zsh
+# Setup fzf
+# ---------
+if [[ ! "$PATH" == */home/adt-erwinwinata/.zsh/plugins/fzf/bin* ]]; then
+  PATH="${PATH:+${PATH}:}/home/adt-erwinwinata/.zsh/plugins/fzf/bin"
+fi
+
+# Auto-completion
+# ---------------
+source "/home/adt-erwinwinata/.zsh/plugins/fzf/shell/completion.zsh"
+
+# Key bindings
+# ------------
+source "/home/adt-erwinwinata/.zsh/plugins/fzf/shell/key-bindings.zsh"
 
 ##################################################
 # ----- Load autosuggestions ------------------- #
