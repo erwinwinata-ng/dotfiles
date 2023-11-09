@@ -25,8 +25,17 @@ alias ga='git add'
 alias gc='git commit'
 alias gco='git checkout'
 alias gp='git pull --ff-only'
-alias gput='function gput(){git push "$1"~"$2":refs/heads/"$1";}; gput'
+alias gput='function gput(){git push origin "$1"~"$2":refs/heads/"$1";}; gput'
 alias gst='git status'
 alias glog='git log --oneline --decorate --graph --all'
 
+# arcanist stuff
+alias ad='arc diff'
+alias al='arc lint'
+alias ald='arc land --onto'
+
+# kubectl stuff
+alias kgp='kubectl get pods'
+alias kgd='kubectl get deployment'
+alias klf='kubectl logs -f'
 
