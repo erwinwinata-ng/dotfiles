@@ -27,7 +27,7 @@ alias gco='git checkout'
 alias gp='git pull --ff-only'
 alias gput='function gput(){git push origin "$1"~"$2":refs/heads/"$1";}; gput'
 alias gst='git status'
-alias glog='git log --oneline --decorate --graph --all'
+alias glog='git log --oneline --decorate --graph --all --no-merges'
 
 # arcanist stuff
 alias ad='arc diff'
